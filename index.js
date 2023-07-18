@@ -1,14 +1,14 @@
-// import { name, campus } from './information';
-// // const userInfo = require('./information');
-// console.log(`Hi, my name is ${name} and I'm in ${campus} campus`);
+
+const userInfo = require('./information');
+// console.log(`Hi, my name is ${userInfo.name} and I'm in ${userInfo.campus} campus`);
 
 
-import { say } from "cowsay";
+const cowsay = require("cowsay");
 
-console.log(say({
-    text: "I'm a moooodule",
+console.log(cowsay.say({
+    text: `Hi, my name is ${userInfo.name} and I'm in ${userInfo.campus} campus`,
     e: "oO",
     T: "U "
 }));
 
-// or cowsay.think()
+
